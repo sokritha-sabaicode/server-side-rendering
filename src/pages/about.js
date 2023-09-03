@@ -12,7 +12,7 @@ export default function About({ posts }) {
 export async function getServerSideProps() {
   const baseUrl =
     process.env.NODE_ENV === "production"
-      ? `https://server-side-rendering.vercel.app/api/posts`
+      ? `https://server-side-rendering-amber.vercel.app/api/posts`
       : "http://localhost:3000/api/posts";
   try {
     const res = await fetch(baseUrl);
