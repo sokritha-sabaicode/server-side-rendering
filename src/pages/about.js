@@ -27,6 +27,7 @@ export async function getServerSideProps() {
     }
 
     const posts = await res.json();
+    console.log("🚀 ~ file: about.js:30 ~ getServerSideProps ~ posts:", posts);
     return {
       props: {
         posts,
